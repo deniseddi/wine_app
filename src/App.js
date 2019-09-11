@@ -14,8 +14,8 @@ class App extends React.Component {
   state = {
     season: "Spring",//Season is part of a question/answer
     dish: "Poultry", // e.target.value? I want to set/update the dish to the button selected value!
-    region: "",
-    tastes: "",
+    region: "Oceania",
+    tastes: "You are not the showy type; you are a little reserved and there is a warm side of you.",
     currentQuestionIndex: 0
   }
 
@@ -41,7 +41,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/questions' render={(routeProps) => <Questions {...routeProps} onNext={this.handleQuestionIndex} currentQuestionIndex={currentQuestionIndex} handleWineLabel={this.handleWineLabel}/>} />
-          <Route path='/show-wine' component={ShoWine} />
+          <Route path='/show-wine' render={() => <ShoWine data={this.state} />} />
         </Switch>
         </div>
       </Router>

@@ -36,8 +36,7 @@ export default function RadioButtonsGroup(props) {
         <RadioGroup aria-label="question" name="question1" value={value} onChange={handleChange}>
            {QuestionList[currentQuestionIndex].answers.map(answer => {
                 return <FormControlLabel onClick={e => handleWineLabel(e, QuestionList[currentQuestionIndex].label)} key={answer} value={answer} control={<Radio />} label={answer} />   
-            })                           
-                
+            })                                
             }
          
         </RadioGroup>
