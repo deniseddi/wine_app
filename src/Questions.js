@@ -1,6 +1,5 @@
-import React from 'react'
-// import { Link } from 'react-router-dom'
-import { makeStyles } from '@material-ui/core/styles';
+import React from 'react';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormHelperText from '@material-ui/core/FormHelperText';
@@ -10,7 +9,7 @@ import FormLabel from '@material-ui/core/FormLabel';
 import Button from '@material-ui/core/Button';
 import QuestionList from './QuestionList'
 import { Link } from 'react-router-dom'
-// import QuestionList from '/QuestionList'
+
 
 
 const useStyles = makeStyles(theme => ({
@@ -19,7 +18,19 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function RadioButtonsGroup(props) {
+const styles = {  
+    question: {
+      fontSize: '20px',
+      color: 'red'
+    },
+
+    name:{
+        fontSize:'15px',
+        color: 'green'
+    }
+};
+
+function RadioButtonsGroup(props) {
   const classes = useStyles();
   const [value, setValue] = React.useState('Poultry');
 
@@ -35,16 +46,26 @@ export default function RadioButtonsGroup(props) {
         <FormLabel component="legend">{QuestionList[currentQuestionIndex].question}</FormLabel>
         <RadioGroup aria-label="question" name="question1" value={value} onChange={handleChange}>
            {QuestionList[currentQuestionIndex].answers.map(answer => {
-                return <FormControlLabel onClick={e => handleWineLabel(e, QuestionList[currentQuestionIndex].label)} key={answer} value={answer} control={<Radio />} label={answer} />   
+                return (
+                    <div>
+                        <FormControlLabel onClick={e => handleWineLabel(e, QuestionList[currentQuestionIndex].label)} key={answer.name} value={answer.name} control={<Radio />} label={answer.name} />
+                        <img src={answer.image} alt=""/>
+                        <img src={QuestionList.imageMap} alt=""/> 
+                        {/* image not displaying */}
+                    </div>
+                )
             })                                
-            }
-         
+            }  
         </RadioGroup>
         {currentQuestionIndex === 3 ? <Link to="show-wine">win</Link> : <Button onClick={props.onNext} variant="contained" color="secondary" className={classes.button}>next!</Button>}
       </FormControl>
     </div>
   )
 }
+
+
+  
+  export default withStyles(styles)(RadioButtonsGroup);
 
 
 

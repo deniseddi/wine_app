@@ -7,30 +7,46 @@ import _ from 'lodash';
 
 
 
-// if (result === ""){
-//     return "Too Bad, no match...what about some tap water?";
-// }
-
 
 function ShoWine(props){
 
+    const wineQuotes = [
+        "Wine is the answer…What was the question?",
+        "I make wine disappear. What is your super power?",
+        "Save water, drink wine",
+        "Wine improves with age. I improve with wine",
+        "You can’t buy happiness, but you can buy wine and that is kind of the same thing"
+    ]
+
     const data = props.data
-    // console.log(wineList.filter(wine => wine.dish.includes(data.dish)))
    
     let result =  wineList.filter( w => w.dish.includes(data.dish)).filter(w => w.season.includes(data.season)).filter(w => w.region.includes(data.region))
     
     let finalResult = _.sample(result) 
-    // console.log (finalResult.title) 
     // getting error : title of undefined
-    if (finalResult = []){ //not sure if working 
+    if (finalResult === undefined){ //not working 
         return(
             <h1>Oh, too bad! No match for you...what about some tap water?</h1>
         ) 
     } else {
-        return(
-            <section>
-                <h1> Here is your match: {finalResult.title} </h1>
+        return( //Css and can add image here
+            <section class = "wineResult">
+                <div class="innerbox">
+                    <div class="box">
+                        <div class="glass">
+                            <div class="a">
+                            </div>   
+                            { finalResult.color === "white" ? <div class="b2"></div> : <div class="b"></div>}
+                            <div class="rod">
+                            </div>
+                            <div class="base">
+                            </div>
+                        </div>
+                     </div>
+                </div>
+                <h1><span className="wineMatch">Here is your match:</span><span className="wineMatchName">{finalResult.title}</span></h1>
                 <h1> Wine taste notes: {finalResult.notes} </h1>
+                <h2> "{ _.sample(wineQuotes)}"</h2>
             </section>
         )
     }
