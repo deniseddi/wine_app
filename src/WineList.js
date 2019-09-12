@@ -7,7 +7,7 @@ const wineList = [
         dish: ['Seafood','Vegetarian','Not pairing with food'],
         season: ['Spring','Autumn','Summer'],
         // personality? here? : 
-        notes: "Apple, pear, yeast",
+        notes: "apple, pear, yeast",
         body: "Medium",
         country: ["Australia","Italy"],
         region: ["Australia & New Zealand","Europe"]
@@ -17,7 +17,7 @@ const wineList = [
         color:"white",
         dish: ['Seafood','Poultry','Vegetarian'],
         season: ['Spring','Autumn','Summer'],
-        notes:"Herbaceous, grassy, passionfruit, citrus, grapefruity",
+        notes:"herbaceous, grassy, passionfruit, citrus, grapefruity",
         body:"Light to Medium",
         country: ["New Zealand","Australia"],
         region: "Australia & New Zealand"
@@ -27,17 +27,27 @@ const wineList = [
         color:"white",
         dish: ['Pasta','Seafood','Poultry','Vegetarian','Say Cheese!'],
         season: ['Winter','Autumn'],
-        notes:"Pear, apple, oak, creamy",
+        notes:"pear, apple, oak, creamy",
         body:"Medium",
         country: ["France","Australia"],
         region: ["Europe","Australia & New Zealand"]
+      },
+      {
+        title: "Chardonnay",
+        color:"white",
+        dish: ['Pasta','Seafood','Poultry','Vegetarian','Say Cheese!'],
+        season: ['Winter','Autumn','Spring'],
+        notes:"floral, tropical fruit, apple, pear,",
+        body:"Medium",
+        country: ["Chile"],
+        region: ["South America"]
       },
       {
         title:"Viognier" ,
         color:"white",
         dish: ['Seafood','Poultry','Vegetarian','Say Cheese!'],
         season: ['Winter','Autumn'],
-        notes: "Floral, peach, apricot, pear, fruity",
+        notes: "floral, peach, apricot, pear, fruity",
         body:"Medium",
         country:"Australia" ,
         region: "Australia & New Zealand"
@@ -47,7 +57,7 @@ const wineList = [
         color:"white",
         dish: ['Seafood','Pasta','Poultry','Vegetarian','Say Cheese!','Not pairing with food'],
         season: ['Summer','Spring','Autumn'],
-        notes:"Pear, peach, white nectarine, silky",
+        notes:"pear, peach, white nectarine, silky",
         body:"Light",
         country:["France","Australia"],
         region:["Europe","Australia & New Zealand"] 
@@ -57,7 +67,7 @@ const wineList = [
         color:"white",
         dish: ['Seafood','Poultry','Vegetarian','Say Cheese!','Not pairing with food'],
         season: ['Summer','Spring','Autumn'],
-        notes:"Crisp, zesty, pear, peach, apricot",
+        notes:"crisp, zesty, pear, peach, apricot",
         body:"Light",
         country:"Italy",
         region:"Europe"
@@ -67,7 +77,7 @@ const wineList = [
         color:"white",
         dish: ['Seafood','Poultry','Vegetarian','Say Cheese!'],
         season: ['Winter','Spring','Autumn'],
-        notes:"Pear, apple, floral",
+        notes:"pear, apple, floral",
         body:"Medium",
         country:["France", "Germany"],
         region: "Europe"
@@ -77,7 +87,7 @@ const wineList = [
         color:"white",
         dish: ['Seafood','Poultry','Vegetarian'],
         season: ['Summer','Autumn','Spring'],
-        notes:"Peaches, fruity",
+        notes:"peaches, fruity",
         body:"Light",
         country:["France","South Africa"],
         region: ["Europe","Africa"]
@@ -87,7 +97,7 @@ const wineList = [
         color:"white",
         dish: ['Seafood','Poultry','Say Cheese!'],
         season: ['Winter','Autumn','Spring'],
-        notes:"Lychee nut, spices, citrus, rose petals",
+        notes:"lychee nut, spices, citrus, rose petals",
         body:"Medium",
         country: ["Germany", "South Africa"],
         region: ["Europe", "Africa"]
@@ -97,7 +107,7 @@ const wineList = [
         color:"white",
         dish: ['Seafood','Vegetarian','Say Cheese!'],
         season: ['Spring','Autumn','Summer'],
-        notes:"Apple, lemon, floral, apricot, fruity",
+        notes:"apple, lemon, floral, apricot, fruity",
         body:"Light",
         country:["Germany", "Australia"],
         region:["Europe","Australia & New Zealand"] 
@@ -107,7 +117,7 @@ const wineList = [
         color:"white",
         dish: ['Pasta','Poultry','Vegetarian'],
         season: ['Spring','Autumn','Summer','Winter'],
-        notes:"Berries, citrus, melon",
+        notes:"berries, citrus, melon",
         body:"Light",
         country:"USA",
         region:"North America" 
@@ -117,7 +127,7 @@ const wineList = [
         color:"white",
         dish: ['Not pairing with food','Say Cheese!'],
         season: ['Spring','Autumn','Summer','Winter'],
-        notes:"Sweet, floral, honeysuckle",
+        notes:"sweet, floral, honeysuckle",
         body:"Light",
         country:"Italy",
         region:"Europe" 
@@ -137,7 +147,7 @@ const wineList = [
         color:"red",
         dish: ['Seafood','Poultry','Pasta','Not pairing with food','Say Cheese!'],
         season: ['Spring','Autumn','Summer','Winter'],
-        notes:"Berries, dark cherry,spice",
+        notes:"berries, dark cherry,spice",
         body:"Light to Medium",
         country:"New Zealand",
         region:"Australia & New Zealand" 
@@ -147,7 +157,7 @@ const wineList = [
         color:"red",
         dish: ['Pasta','Meat'],
         season: ['Spring','Autumn','Winter'],
-        notes:"Blackberry, plum, currant, chocolate, vanilla",
+        notes:"blackberry, plum, currant, chocolate, vanilla",
         body:"Medium",
         country:"Australia",
         region:"Australia & New Zealand" 
@@ -157,7 +167,7 @@ const wineList = [
         color:"red",
         dish: ['Pasta','Meat','Say Cheese!','Not pairing with food'],
         season: ['Spring','Autumn','Winter'],
-        notes: "Berries, jammy, cherry, earthy",
+        notes: "berries, jammy, cherry, earthy",
         body: "Medium to full",
         country: "USA",
         region: "North America"
@@ -167,7 +177,7 @@ const wineList = [
         color:"red",
         dish: ['Pasta','Meat'],
         season: ['Spring','Autumn','Winter'],
-        notes:"Blueberries, black currant, cassis, raspberries, oaky",
+        notes:"blueberries, black currant, cassis, raspberries, oaky",
         body:"Full",
         country:["Australia","USA"],
         region:["Australia & New Zealand","North America"]
@@ -187,7 +197,7 @@ const wineList = [
         color:"red",
         dish: ['Pasta','Meat','Say Cheese!','Vegerarian'],
         season: ['Spring','Autumn','Winter'],
-        notes:"Plum, blackberry, spice,vanilla, opulent",
+        notes:"plum, blackberry, spice,vanilla, opulent",
         body:"Medium to full",
         country:"Australia",
         region:"Australia & New Zealand" 
@@ -197,7 +207,7 @@ const wineList = [
         color:"red",
         dish: ['Meat'],
         season: ['Spring','Autumn','Winter'],
-        notes:"Blackberry, pepper, jammy",
+        notes:"blackberry, pepper, jammy",
         body:"Full",
         country:"France",
         region:"Europe" 
@@ -207,7 +217,7 @@ const wineList = [
         dish: ['Meat','Pasta','Say Cheese!','Vegerarian'],
         season: ['Spring','Autumn','Winter','Summer'],
         color:"red",
-        notes:"Cherry,plum, fruity, spice",
+        notes:"cherry,plum, fruity, spice",
         body:"Medium",
         country:"Italy",
         region:"Europe" 
@@ -217,7 +227,7 @@ const wineList = [
         color:"red",
         dish: ['Meat','Pasta','Chicken','Say Cheese!','Vegerarian'],
         season: ['Spring','Winter'],
-        notes:"Raspberry, cassis, herbaceous",
+        notes:"raspberry, cassis, herbaceous",
         body:"Medium",
         country:"France",
         region:"Europe" 
@@ -227,7 +237,7 @@ const wineList = [
         color:"red",
         dish: ['Meat','Pasta'],
         season: ['Autumn','Winter'],
-        notes:"Blackberry, cherry, herbaceous, violet",
+        notes:"blackberry, cherry, herbaceous, violet",
         body:"Medium",
         country:"Italy",
         region:"Europe" 
@@ -237,7 +247,7 @@ const wineList = [
         color:"red",
         dish: ['Meat','Pasta','Say Cheese!'],
         season: ['Spring','Autumn','Winter'],
-        notes:"Black cherry, raspberry, plum, floral, herbaceous",
+        notes:"black cherry, raspberry, plum, floral, herbaceous",
         body:"Medium to full",
         country:"Argentina",
         region:"South America" 
@@ -245,7 +255,7 @@ const wineList = [
       {
         title:"Tempranillo",
         color:"red",
-        notes:"Blueberry, cherry, plum, violets,tobacco, allspice",
+        notes:"blueberry, cherry, plum, violets,tobacco, allspice",
         body:"Medium",
         dish: ['Pasta','Meat','Say Cheese!'],
         season: ['winter','Autumn','Spring'],
@@ -267,7 +277,7 @@ const wineList = [
         color:"red",
         dish: ['Seafood','Meat','Poultry','Pasta','Not pairing with food','Say Cheese!'],
         season: ['Spring','Autumn','Summer','Winter'],
-        notes:"Plum, blackberry, smoky, licorice",
+        notes:"plum, blackberry, smoky, licorice",
         body:"Medium to full",
         country:"South Africa",
         region:"Africa" 
@@ -277,7 +287,7 @@ const wineList = [
         color:"red",
         dish: ['Meat','Poultry'],
         season: ['Autumn','Winter'],
-        notes:"Raspberry, mulberry, spice",
+        notes:"raspberry, mulberry, spice",
         body:"Medium",
         country:"Spain",
         region:"Europe" 

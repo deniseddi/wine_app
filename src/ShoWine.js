@@ -30,10 +30,10 @@ function ShoWine(props){
         ) 
     } else {
         return( //Css and can add image here
-            <div>
+            <div class="background">
             <section class = "wineResult">
                 <div class="innerboxResult">
-                    <div class="box">
+                    <div class="box1">
                         <div class="glass">
                             <div class="a">
                             </div>   

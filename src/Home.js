@@ -9,14 +9,14 @@ import { Link } from 'react-router-dom'
         <h1 className="title">Wine Time</h1>
     </div>
     <div>
-        <h3 className="subtitle">Can't think of a wine? Click "start" to find your wine match.</h3>
+        <h3 className="subtitle">Can't think of a wine to drink? Click <Link class="click" to="questions">here </Link> to find your wine match.</h3>
     </div>
-    <Link to="questions">Start</Link>
+    
     </div>
     <body>       
         <div class="outerbox">
             <div class="innerbox">
-                <div class="box">
+                <div class="box1">
                     <div class="glass">
                         <div class="a">
                         </div>
@@ -30,7 +30,7 @@ import { Link } from 'react-router-dom'
                 </div>
             </div>
             <div class="innerbox">
-                <div class="box">
+                <div class="box2">
                     <div class="glass">
                         <div class="a">
                         </div>
@@ -44,7 +44,7 @@ import { Link } from 'react-router-dom'
                 </div>
             </div>
             <div class="innerbox">
-                <div class="box">
+                <div class="box3">
                     <div class="glass">
                         <div class="a">
                         </div>
@@ -58,7 +58,7 @@ import { Link } from 'react-router-dom'
                 </div>
             </div>
             <div class="innerbox">
-                <div class="box">
+                <div class="box3">
                     <div class="glass">
                         <div class="a">
                         </div>
@@ -72,7 +72,7 @@ import { Link } from 'react-router-dom'
                 </div>
             </div>
             <div class="innerbox">
-                <div class="box">
+                <div class="box1">
                     <div class="glass">
                         <div class="a">
                         </div>
@@ -86,7 +86,7 @@ import { Link } from 'react-router-dom'
                 </div>
             </div>
             <div class="innerbox">
-                <div class="box">
+                <div class="box2">
                     <div class="glass">
                         <div class="a">
                         </div>
@@ -100,7 +100,7 @@ import { Link } from 'react-router-dom'
                 </div>
             </div>
             <div class="innerbox">
-                <div class="box">
+                <div class="box2">
                     <div class="glass">
                         <div class="a">
                         </div>
@@ -114,7 +114,7 @@ import { Link } from 'react-router-dom'
                 </div>
             </div>
             <div class="innerbox">
-                <div class="box">
+                <div class="box3">
                     <div class="glass">
                         <div class="a">
                         </div>
@@ -128,7 +128,7 @@ import { Link } from 'react-router-dom'
                 </div>
             </div>
             <div class="innerbox">
-                <div class="box">
+                <div class="box1">
                     <div class="glass">
                         <div class="a">
                         </div>

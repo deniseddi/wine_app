@@ -58,7 +58,7 @@ function RadioButtonsGroup(props) {
             })                                
             }  
         </RadioGroup>
-        {currentQuestionIndex === 3 ? <Link to="show-wine">win</Link> : <Button onClick={props.onNext} variant="contained" color="secondary" className={classes.button}>next!</Button>}
+        {currentQuestionIndex === 3 ? <Link class="seeResult"to="show-wine">Result</Link> : <Button onClick={props.onNext} variant="contained" color="secondary" className={classes.button}>next!</Button>}
       </FormControl>
     </div>
   )

@@ -23,23 +23,47 @@ padding-top: 5px;
 /* background-color:black;} */
 }
 
-.box {
+.box1 {
 height:178px;
 width:178px;
 border-radius: 10px;
 margin: auto;
 padding-top: 2px;
-  padding-right: 2px;
-  padding-bottom: 2px;
-  padding-left: 2px;
+padding-right: 2px;
+padding-bottom: 2px;
+padding-left: 2px;
 background-color:#ff9e00;
 }
 
+.box2 {
+  height:178px;
+  width:178px;
+  border-radius: 10px;
+  margin: auto;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  background-color:#b134e6;
+  }
+
+  .box3 {
+    height:178px;
+    width:178px;
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    background-color:#7fd244;
+    }
+
 .glass {
 padding-top: 20px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 60px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 60px;
 }
 
 
@@ -69,7 +93,7 @@ height: 50px;
 width: 50px;
 box-sizing: border-box;
 border-radius: 90%;
-background-color:#fafae4;
+background-color:#fcfcca;
 }
 
 .rod {
@@ -94,9 +118,13 @@ background-color:#EEF0F2;
 }
 
 legend.MuiFormLabel-root {
-  color: rgb(247, 20, 62);
+  color: #f50057;
   font-size: 20px;
   margin-bottom: 7%;
+}
+
+button.MuiButton-containedSecondary {
+  margin: 7% 90%;
 }
 
 .wineMatch {
@@ -186,4 +214,32 @@ color: orange;
 footer{
 margin: 0 auto;
 margin-top: 20%;
+}
+
+.background {
+  background-color: #fff9ef;
+}
+
+.click {
+  text-decoration: none;
+  font-weight:bolder;
+  color:#f50057;
+}
+
+.seeResult {
+  text-decoration: none;
+  width: 2.7em;
+  font-family: 'Roboto', sans-serif;
+  background-color:#f50057;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  height: 8px;
+  margin: 7% auto;
+  text-align: justify;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  
+    
 }
