@@ -24,7 +24,7 @@ const styles = {
       color: 'red'
     },
 
-    name:{
+    answer:{
         fontSize:'15px',
         color: 'green'
     }
@@ -43,14 +43,15 @@ function RadioButtonsGroup(props) {
   return ( //can I later customise each component? eg. give it a map on Question.n4 ? Add icons to each question for the 3rd? Or should I step back and write code for each component , each round of questions. 
     <div>
       <FormControl component="fieldset" className={classes.formControl}>
-        <FormLabel component="legend">{QuestionList[currentQuestionIndex].question}</FormLabel>
+        <FormLabel component="legend">{QuestionList[currentQuestionIndex].question.title} </FormLabel>
+        <img src={QuestionList[currentQuestionIndex].question.imageMap} alt=""/>
         <RadioGroup aria-label="question" name="question1" value={value} onChange={handleChange}>
            {QuestionList[currentQuestionIndex].answers.map(answer => {
                 return (
                     <div>
-                        <FormControlLabel onClick={e => handleWineLabel(e, QuestionList[currentQuestionIndex].label)} key={answer.name} value={answer.name} control={<Radio />} label={answer.name} />
+                        <FormControlLabel onClick={e => handleWineLabel(e, QuestionList[currentQuestionIndex].label)} key={answer.name} className={answer.className} value={answer.name} control={<Radio />} label={answer.name} />
                         <img src={answer.image} alt=""/>
-                        <img src={QuestionList.imageMap} alt=""/> 
+                        {/* //question is undefined */}
                         {/* image not displaying */}
                     </div>
                 )

@@ -4,8 +4,13 @@ import { Link } from 'react-router-dom'
  function Home(){
      return(
     <section>
+    <div className="head">
     <div>
-    <h1>Which wine is the one for you?</h1>
+        <h1 className="title">Wine Time</h1>
+    </div>
+    <div>
+        <h3 className="subtitle">Can't think of a wine? Click "start" to find your wine match.</h3>
+    </div>
     <Link to="questions">Start</Link>
     </div>
     <body>       

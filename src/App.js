@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Questions from './Questions';
 import ShoWine from './ShoWine';
 import Home from './Home';
-
 import './App.css';
 
 
@@ -14,7 +13,7 @@ class App extends React.Component {
   state = {
     season: "Spring",
     dish: "Poultry", 
-    region: "Oceania",
+    region: "Australia & New Zealand",
     tastes: "You are not the showy type; you are a little reserved and there is a warm side of you.",
     currentQuestionIndex: 0
   }

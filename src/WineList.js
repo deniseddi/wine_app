@@ -10,7 +10,7 @@ const wineList = [
         notes: "Apple, pear, yeast",
         body: "Medium",
         country: ["Australia","Italy"],
-        region: ["Oceania","Europe"]
+        region: ["Australia & New Zealand","Europe"]
       },
       {
         title:"Sauvignon Blanc",
@@ -20,7 +20,7 @@ const wineList = [
         notes:"Herbaceous, grassy, passionfruit, citrus, grapefruity",
         body:"Light to Medium",
         country: ["New Zealand","Australia"],
-        region: "Oceania"
+        region: "Australia & New Zealand"
       },
       {
         title: "Chardonnay",
@@ -30,7 +30,7 @@ const wineList = [
         notes:"Pear, apple, oak, creamy",
         body:"Medium",
         country: ["France","Australia"],
-        region: ["Europe","Oceania"]
+        region: ["Europe","Australia & New Zealand"]
       },
       {
         title:"Viognier" ,
@@ -40,7 +40,7 @@ const wineList = [
         notes: "Floral, peach, apricot, pear, fruity",
         body:"Medium",
         country:"Australia" ,
-        region: "Oceania"
+        region: "Australia & New Zealand"
       },
       {
         title:"Pinot Gris",
@@ -50,7 +50,7 @@ const wineList = [
         notes:"Pear, peach, white nectarine, silky",
         body:"Light",
         country:["France","Australia"],
-        region:["Europe","Oceania"] 
+        region:["Europe","Australia & New Zealand"] 
       },
       {
         title:"Pinot Grigio",
@@ -100,7 +100,7 @@ const wineList = [
         notes:"Apple, lemon, floral, apricot, fruity",
         body:"Light",
         country:["Germany", "Australia"],
-        region:["Europe","Oceania"] 
+        region:["Europe","Australia & New Zealand"] 
       },
       {
         title:"Zinfandel",
@@ -130,7 +130,7 @@ const wineList = [
       notes:"ripe plum, spice, chocolate, earthy",
       body:"Medium",
       country: "Australia",
-      region: "Oceania"
+      region: "Australia & New Zealand"
     },
       {
         title:"Pinot Noir",
@@ -140,7 +140,7 @@ const wineList = [
         notes:"Berries, dark cherry,spice",
         body:"Light to Medium",
         country:"New Zealand",
-        region:"Oceania" 
+        region:"Australia & New Zealand" 
       },
       {
         title:"Merlot",
@@ -150,7 +150,7 @@ const wineList = [
         notes:"Blackberry, plum, currant, chocolate, vanilla",
         body:"Medium",
         country:"Australia",
-        region:"Oceania" 
+        region:"Australia & New Zealand" 
       },
       {
         title:"Zinfandel",
@@ -170,7 +170,7 @@ const wineList = [
         notes:"Blueberries, black currant, cassis, raspberries, oaky",
         body:"Full",
         country:["Australia","USA"],
-        region:["Oceania","North America"]
+        region:["Australia & New Zealand","North America"]
       },
       {
         title:"Syrah",
@@ -190,7 +190,7 @@ const wineList = [
         notes:"Plum, blackberry, spice,vanilla, opulent",
         body:"Medium to full",
         country:"Australia",
-        region:"Medium to full" 
+        region:"Australia & New Zealand" 
       },
       {
         title:"Petite Sirah",
@@ -290,7 +290,7 @@ const wineList = [
         notes:"blackcurrant, red fruits, chocolate, earthy",
         body:"Medium to full",
         country:"Australia",
-        region:"Oceania" 
+        region:"Australia & New Zealand" 
       },
       {
         title:"Rosé",
@@ -300,7 +300,7 @@ const wineList = [
         notes:"floral, strawberry, rose petal, citrus",
         body:"Light",
         country:["Australia","France"],
-        region:["Oceania", "Europe"] 
+        region:["Australia & New Zealand", "Europe"] 
       },
 ]
 export default wineList;

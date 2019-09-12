@@ -30,8 +30,9 @@ function ShoWine(props){
         ) 
     } else {
         return( //Css and can add image here
+            <div>
             <section class = "wineResult">
-                <div class="innerbox">
+                <div class="innerboxResult">
                     <div class="box">
                         <div class="glass">
                             <div class="a">
@@ -44,10 +45,17 @@ function ShoWine(props){
                         </div>
                      </div>
                 </div>
-                <h1><span className="wineMatch">Here is your match:</span><span className="wineMatchName">{finalResult.title}</span></h1>
-                <h1> Wine taste notes: {finalResult.notes} </h1>
-                <h2> "{ _.sample(wineQuotes)}"</h2>
+                <div>
+                    <h1><span className="wineMatch">Here is your match: </span><span className="wineMatchName">{finalResult.title}</span></h1>
+                    <h1 className="wineMatch"> Wine tasting notes: <span
+                    className="wineMatchName">{finalResult.notes}</span> </h1>
+                </div>   
             </section>
+            <footer>
+                <h2 class="wineQuotes">"{ _.sample(wineQuotes)}"</h2>
+            </footer>
+            </div>
+            
         )
     }
     
