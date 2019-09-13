@@ -1,15 +1,22 @@
 div {
   display: flex;
   flex-wrap: wrap;
+
   /* display:block; */
 }
-/* .outerbox{
+
+#root {
+  align-items: center;
+  justify-content: center;
+}
+
+.outerbox{
 height:200px;
-width:200px;
+width:600px;
 border-radius: 10px;
-margin:auto;
-background-color:#733B1E;
-padding-top: 5px;} */
+margin: 0 auto;
+/* background-color:#733B1E; */
+padding-top: 5px;}
 
 .innerbox{
 /* margin: auto; */

@@ -111,7 +111,7 @@ let QuestionList = [
         label: "region",
         question: {
             title: "Are you feeling adventurous? Pick a popular wine region!", 
-            imageMap: "https://i.imgur.com/xvFwozL.gif?1",
+            imageMap: "https://i.imgur.com/k2QBrMy.png?2",
         },
         answers: [
             {
