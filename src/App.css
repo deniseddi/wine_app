@@ -54,17 +54,17 @@ background-color:#ff9e00;
   background-color:#b134e6;
   }
 
-  .box3 {
-    height:178px;
-    width:178px;
-    border-radius: 10px;
-    margin: auto;
-    padding-top: 2px;
-    padding-right: 2px;
-    padding-bottom: 2px;
-    padding-left: 2px;
-    background-color:#7fd244;
-    }
+.box3 {
+  height:178px;
+  width:178px;
+  border-radius: 10px;
+  margin: auto;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  background-color:#7fd244;
+  }
 
 .glass {
 padding-top: 20px;
@@ -73,55 +73,54 @@ padding-bottom: 10px;
 padding-left: 60px;
 }
 
-
 .a {
-height:50px;
-width:50px;
-text-align: center;
--webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-background-color:#EEF0F2;
+  height:50px;
+  width:50px;
+  text-align: center;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  background-color:#EEF0F2;
 }
 
 .b {
-margin-top: -28%;
-margin-right: 10%;
-height: 50px;
-width: 50px;
-box-sizing: border-box;
-border-radius: 90%;
-background-color:#800080;
+  margin-top: -28%;
+  margin-right: 10%;
+  height: 50px;
+  width: 50px;
+  box-sizing: border-box;
+  border-radius: 90%;
+  background-color:#800080;
 }
 
 .b2 {
-margin-top: -28%;
-margin-right: 10%;
-height: 50px;
-width: 50px;
-box-sizing: border-box;
-border-radius: 90%;
-background-color:#fcfcca;
+  margin-top: -28%;
+  margin-right: 10%;
+  height: 50px;
+  width: 50px;
+  box-sizing: border-box;
+  border-radius: 90%;
+  background-color:#fcfcca;
 }
 
 .rod {
-margin-top:-4%;
-height:50px;
-width:50px;
--webkit-clip-path: ellipse(4% 40% at 50% 50%);
-clip-path: ellipse(4% 40% at 50% 50%);
-background-color:#EEF0F2;
+  margin-top:-4%;
+  height:50px;
+  width:50px;
+  -webkit-clip-path: ellipse(4% 40% at 50% 50%);
+  clip-path: ellipse(4% 40% at 50% 50%);
+  background-color:#EEF0F2;
 }
 
 .base {
-margin-left:-10.5%;
-margin-top:-60%;
-height:65px;
-width:15px;
-left:20px;
-padding-left: 60px;
--webkit-clip-path: polygon(50% 88%, 0% 100%, 100% 100%);
-clip-path: polygon(50% 88%, 0% 100%, 100% 100%);
-background-color:#EEF0F2;
+  margin-left:-10.5%;
+  margin-top:-60%;
+  height:65px;
+  width:15px;
+  left:20px;
+  padding-left: 60px;
+  -webkit-clip-path: polygon(50% 88%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 88%, 0% 100%, 100% 100%);
+  background-color:#EEF0F2;
 }
 
 legend.MuiFormLabel-root {
@@ -135,11 +134,11 @@ button.MuiButton-containedSecondary {
 }
 
 .wineMatch {
-color: blue;
+/* color: blue; */
 }
 
 .wineMatchName {
-  color: pink;
+  /* color: pink; */
 }
 
 .poultry {
@@ -149,29 +148,33 @@ color: blue;
 .dreamer .MuiTypography-body1 {
 font-family:'Chilanka', cursive;
 font-weight: 900;
-font-size: 1.2em;
+font-size: 1.3em;
 color: orange;
+/* color: black; */
 }
 
 .difficult .MuiTypography-body1 {
   font-family: 'Gayathri', sans-serif;
   font-weight: 900;
-  font-size: 1.2em;
-  color:blue;
+  font-size: 1.3em;
+  color:rgb(74, 182, 27);
+  /* color: black; */
 }
 
 .sweetie .MuiTypography-body1 {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family:'Crafty Girls', cursive;
   font-weight: 900;
   font-size: 1.3em;
   color:lightcoral;
+  /* color: black; */
 }
 
 .reserved .MuiTypography-body1 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 900;
   color:purple;
+  /* color: black; */
 }
 
 .wineResult{
@@ -248,5 +251,10 @@ margin-top: 20%;
   text-align: justify;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   
-    
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #fff9ef;
+  }
 }

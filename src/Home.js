@@ -9,134 +9,134 @@ import { Link } from 'react-router-dom'
         <h1 className="title">Wine Time</h1>
     </div>
     <div>
-        <h3 className="subtitle">Can't think of a wine to drink? Click <Link class="click" to="questions">here </Link> to find your wine match.</h3>
+        <h3 className="subtitle">Can't think of a wine to drink? Click <Link className="click" to="questions">here </Link> to find your wine match.</h3>
     </div>
     
     </div>
     <body>       
-        <div class="outerbox">
-            <div class="innerbox">
-                <div class="box1">
-                    <div class="glass">
-                        <div class="a">
+        <div className="outerbox">
+            <div className="innerbox">
+                <div className="box1">
+                    <div className="glass">
+                        <div className="a">
                         </div>
-                        <div class="b">
+                        <div className="b">
                         </div>
-                        <div class="rod">
+                        <div className="rod">
                         </div>
-                        <div class="base">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="innerbox">
-                <div class="box2">
-                    <div class="glass">
-                        <div class="a">
-                        </div>
-                        <div class="b2">
-                        </div>
-                        <div class="rod">
-                        </div>
-                        <div class="base">
+                        <div className="base">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="innerbox">
-                <div class="box3">
-                    <div class="glass">
-                        <div class="a">
+            <div className="innerbox">
+                <div className="box2">
+                    <div className="glass">
+                        <div className="a">
                         </div>
-                        <div class="b">
+                        <div className="b2">
                         </div>
-                        <div class="rod">
+                        <div className="rod">
                         </div>
-                        <div class="base">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="innerbox">
-                <div class="box3">
-                    <div class="glass">
-                        <div class="a">
-                        </div>
-                        <div class="b2">
-                        </div>
-                        <div class="rod">
-                        </div>
-                        <div class="base">
+                        <div className="base">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="innerbox">
-                <div class="box1">
-                    <div class="glass">
-                        <div class="a">
+            <div className="innerbox">
+                <div className="box3">
+                    <div className="glass">
+                        <div className="a">
                         </div>
-                        <div class="b">
+                        <div className="b">
                         </div>
-                        <div class="rod">
+                        <div className="rod">
                         </div>
-                        <div class="base">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="innerbox">
-                <div class="box2">
-                    <div class="glass">
-                        <div class="a">
-                        </div>
-                        <div class="b2">
-                        </div>
-                        <div class="rod">
-                        </div>
-                        <div class="base">
+                        <div className="base">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="innerbox">
-                <div class="box2">
-                    <div class="glass">
-                        <div class="a">
+            <div className="innerbox">
+                <div className="box3">
+                    <div className="glass">
+                        <div className="a">
                         </div>
-                        <div class="b">
+                        <div className="b2">
                         </div>
-                        <div class="rod">
+                        <div className="rod">
                         </div>
-                        <div class="base">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="innerbox">
-                <div class="box3">
-                    <div class="glass">
-                        <div class="a">
-                        </div>
-                        <div class="b2">
-                        </div>
-                        <div class="rod">
-                        </div>
-                        <div class="base">
+                        <div className="base">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="innerbox">
-                <div class="box1">
-                    <div class="glass">
-                        <div class="a">
+            <div className="innerbox">
+                <div className="box1">
+                    <div className="glass">
+                        <div className="a">
                         </div>
-                        <div class="b">
+                        <div className="b">
                         </div>
-                        <div class="rod">
+                        <div className="rod">
                         </div>
-                        <div class="base">
+                        <div className="base">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="innerbox">
+                <div className="box2">
+                    <div className="glass">
+                        <div className="a">
+                        </div>
+                        <div className="b2">
+                        </div>
+                        <div className="rod">
+                        </div>
+                        <div className="base">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="innerbox">
+                <div className="box2">
+                    <div className="glass">
+                        <div className="a">
+                        </div>
+                        <div className="b">
+                        </div>
+                        <div className="rod">
+                        </div>
+                        <div className="base">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="innerbox">
+                <div className="box3">
+                    <div className="glass">
+                        <div className="a">
+                        </div>
+                        <div className="b2">
+                        </div>
+                        <div className="rod">
+                        </div>
+                        <div className="base">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="innerbox">
+                <div className="box1">
+                    <div className="glass">
+                        <div className="a">
+                        </div>
+                        <div className="b">
+                        </div>
+                        <div className="rod">
+                        </div>
+                        <div className="base">
                         </div>
                     </div>
                 </div>
