@@ -1,6 +1,6 @@
 ## Wine Time app
-Check it out at: []()  
-<img width="465" alt="Screen Shot 2019-09-19 at 3 15 09 pm" src="https://user-images.githubusercontent.com/45111486/65215417-c72afc00-daf0-11e9-928d-aba341bc4aa0.png">
+### Link: []()  
+<img width="408" alt="Screen Shot 2019-09-19 at 3 15 09 pm" src="https://user-images.githubusercontent.com/45111486/65215556-415b8080-daf1-11e9-906c-aa1e9f618f3d.png">
 
 ### Description  
 An app based on the idea of helping users to choose a wine to drink when they don't know or don't have the time to choose one. Users are guided through four rounds of questios that filters the wines and at the end, displays the perfect match.
