@@ -115,7 +115,7 @@ const wineList = [
       {
         title:"Zinfandel",
         color:"white",
-        dish: ['Pasta','Poultry','Vegetarian'],
+        dish: ['Pasta','Poultry','Vegetarian','Say Cheese!'],
         season: ['Spring','Autumn','Summer','Winter'],
         notes:"berries, citrus, melon",
         body:"Light",
