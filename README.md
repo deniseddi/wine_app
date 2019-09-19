@@ -1,7 +1,7 @@
-# Wine Time app
+## Wine Time app
 Check it out at: []() 
 
-# Description  
+### Description  
 An app based on the idea of helping users to choose a wine to drink when they don't know or don't have the time to choose one. Users are guided through four rounds of questios that filters the wines and at the end, displays the perfect match.
 
 ### Getting Started
