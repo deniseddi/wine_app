@@ -235,6 +235,9 @@ margin-top: 20%;
   font-weight:bolder;
   color:#f50057;
 }
+.restart-link {
+  font-family: 'Montserrat', sans-serif;
+}
 
 .seeResult {
   text-decoration: none;

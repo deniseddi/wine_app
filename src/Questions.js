@@ -18,16 +18,16 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const styles = {  
-    question: {
-      fontSize: '20px',
-      color: 'red'
-    },
+const styles = {
+  question: {
+    fontSize: '20px',
+    color: 'red'
+  },
 
-    answer:{
-        fontSize:'15px',
-        color: 'green'
-    }
+  answer: {
+    fontSize: '15px',
+    color: 'green'
+  }
 };
 
 function RadioButtonsGroup(props) {
@@ -38,70 +38,84 @@ function RadioButtonsGroup(props) {
     setValue(event.target.value);
   }
 
-  const { currentQuestionIndex,handleWineLabel } = props
-
+  // const currentQuestionIndex = this.props.currentQuestionIndex
+  // const handleWineLabel = this.props.handleWineLabel
+  const {
+    currentQuestionIndex,
+    handleWineLabel,
+    onNext,
+    onBack
+  } = props
+  console.log('currentQuestionIndex', currentQuestionIndex)
+  console.log('value', value)
   return ( //can I later customise each component? eg. give it a map on Question.n4 ? Add icons to each question for the 3rd? Or should I step back and write code for each component , each round of questions. 
     <div>
       <FormControl component="fieldset" className={classes.formControl}>
         <FormLabel component="legend">{QuestionList[currentQuestionIndex].question.title} </FormLabel>
-        <img src={QuestionList[currentQuestionIndex].question.imageMap} alt=""/>
+        <img src={QuestionList[currentQuestionIndex].question.imageMap} alt="" />
         <RadioGroup aria-label="question" name="question1" value={value} onChange={handleChange}>
-           {QuestionList[currentQuestionIndex].answers.map(answer => {
-                return (
-                    <div>
-                        <FormControlLabel onClick={e => handleWineLabel(e, QuestionList[currentQuestionIndex].label)} key={answer.name} className={answer.className} value={answer.name} control={<Radio />} label={answer.name} />
-                        <img src={answer.image} alt=""/>
-                        {/* //question is undefined */}
-                        {/* image not displaying */}
-                    </div>
-                )
-            })                                
-            }  
+          {QuestionList[currentQuestionIndex].answers.map(answer => {
+            return (
+              <div>
+                <FormControlLabel onClick={e => handleWineLabel(e, QuestionList[currentQuestionIndex].label)} key={answer.name} className={answer.className} value={answer.name} control={<Radio />} label={answer.name} />
+                <img src={answer.image} alt="" />
+                {/* //question is undefined */}
+                {/* image not displaying */}
+              </div>
+            )
+          })
+          }
         </RadioGroup>
-        {currentQuestionIndex === 3 ? <Link class="seeResult"to="show-wine">Result</Link> : <Button onClick={props.onNext} variant="contained" color="secondary" className={classes.button}>next!</Button>}
+        {currentQuestionIndex === 3
+          ? <Link class="seeResult" to="show-wine">Result</Link>
+          : <Button onClick={onNext} variant="contained" color="secondary" className={classes.button}>next</Button>
+        }
+        {currentQuestionIndex > 0 && (
+          <Button onClick={onBack} variant="contained" color="secondary" className={classes.button}>back</Button>
+        )}
       </FormControl>
     </div>
   )
 }
 
 
-  
-  export default withStyles(styles)(RadioButtonsGroup);
+
+export default withStyles(styles)(RadioButtonsGroup);
 
 
 
 
 
-      /* <FormControl component="fieldset" className={classes.formControl}>
-        <FormLabel component="legend">{QuestionList[1].question}</FormLabel>
-        <RadioGroup aria-label="question" name="question1" value={value} onChange={handleChange}>
-           {QuestionList[1].answers.map(answer => {
-                return <FormControlLabel value={answer} control={<Radio />} label={answer} />  
-                })
-            }
-        </RadioGroup>
-        <Button variant="contained" color="secondary" className={classes.button}>Go back</Button>
-      </FormControl>
-      <FormControl component="fieldset" className={classes.formControl}>
-        <FormLabel component="legend">{QuestionList[2].question}</FormLabel>
-        <RadioGroup aria-label="question" name="question1" value={value} onChange={handleChange}>
-           {QuestionList[2].answers.map(answer => {
-                return <FormControlLabel value={answer} control={<Radio />} label={answer} />  
-                })
-            }
-        </RadioGroup>
-        <Button variant="contained" color="secondary" className={classes.button}>Go back</Button>
-      </FormControl>
-      <FormControl component="fieldset" className={classes.formControl}>
-        <FormLabel component="legend">{QuestionList[3].question}</FormLabel>
-        <RadioGroup aria-label="question" name="question1" value={value} onChange={handleChange}>
-           {QuestionList[3].answers.map(answer => {
-                return <FormControlLabel value={answer} control={<Radio />} label={answer} />  
-                })
-            }
-        </RadioGroup>
-        <Button variant="contained" color="secondary" className={classes.button}>Go back</Button>
-      </FormControl> */
+/* <FormControl component="fieldset" className={classes.formControl}>
+  <FormLabel component="legend">{QuestionList[1].question}</FormLabel>
+  <RadioGroup aria-label="question" name="question1" value={value} onChange={handleChange}>
+     {QuestionList[1].answers.map(answer => {
+          return <FormControlLabel value={answer} control={<Radio />} label={answer} />
+          })
+      }
+  </RadioGroup>
+  <Button variant="contained" color="secondary" className={classes.button}>Go back</Button>
+</FormControl>
+<FormControl component="fieldset" className={classes.formControl}>
+  <FormLabel component="legend">{QuestionList[2].question}</FormLabel>
+  <RadioGroup aria-label="question" name="question1" value={value} onChange={handleChange}>
+     {QuestionList[2].answers.map(answer => {
+          return <FormControlLabel value={answer} control={<Radio />} label={answer} />
+          })
+      }
+  </RadioGroup>
+  <Button variant="contained" color="secondary" className={classes.button}>Go back</Button>
+</FormControl>
+<FormControl component="fieldset" className={classes.formControl}>
+  <FormLabel component="legend">{QuestionList[3].question}</FormLabel>
+  <RadioGroup aria-label="question" name="question1" value={value} onChange={handleChange}>
+     {QuestionList[3].answers.map(answer => {
+          return <FormControlLabel value={answer} control={<Radio />} label={answer} />
+          })
+      }
+  </RadioGroup>
+  <Button variant="contained" color="secondary" className={classes.button}>Go back</Button>
+</FormControl> */
 
- 
+
 
